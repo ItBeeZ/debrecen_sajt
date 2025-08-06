@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termékeink - Debreczeni Sajtműhely</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html" style="text-decoration: none; color: inherit;">Debreczeni Sajtműhely</a></h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Főoldal</a>
+                <a href="rolunk.html" class="nav-link">Rólunk</a>
+                <a href="termekeink.html" class="nav-link active">Termékeink</a>
+                <a href="kapcsolat.html" class="nav-link">Kapcsolat</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Termékeink</h1>
+            <p>Fedezze fel sajtjaink változatos világát</p>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="product-categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="filter-btn active" data-filter="all">Összes</button>
+                <button class="filter-btn" data-filter="kemeny">Kemény sajtok</button>
+                <button class="filter-btn" data-filter="lagy">Lágy sajtok</button>
+                <button class="filter-btn" data-filter="fustolt">Füstölt sajtok</button>
+                <button class="filter-btn" data-filter="kecske">Kecskesajtok</button>
+                <button class="filter-btn" data-filter="turo">Túrók</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-detailed">
+        <div class="container">
+            <div class="products-grid-detailed">
+                <!-- Trappista sajt -->
+                <div class="product-card-detailed" data-category="lagy">
+                    <div class="product-image">
+                        <i class="fas fa-cheese"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Trappista sajt</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="product-description">Klasszikus, lágy ízű trappista sajt, amely tökéletes szendvicsekhez és melegszendvicsekhez. Krémes textúrája és enyhe íze miatt kedvelt a családok körében.</p>
+                        <div class="product-details">
+                            <div class="detail-item">
+                                <strong>Zsírtartalom:</strong> 45%
+                            </div>
+                            <div class="detail-item">
+                                <strong>Érlelési idő:</strong> 2-3 hét
+                            </div>
+                            <div class="detail-item">
+                                <strong>Tároló hőmérséklet:</strong> 4-8°C
+                            </div>
+                        </div>
+                        <div class="product-features">
+                            <span class="feature-tag">Lágy</span>
+                            <span class="feature-tag">Enyhe</span>
+                            <span class="feature-tag">Családbarát</span>
+                        </div>
+                        <div class="product-price">2.800 Ft/kg</div>
+                    </div>
+                </div>
+
+                <!-- Füstölt sajt -->
+                <div class="product-card-detailed" data-category="fustolt">
+                    <div class="product-image">
+                        <i class="fas fa-cheese"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Füstölt sajt</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="product-description">Hagyományos módon füstölt sajt, amely különleges aromával és gazdag ízzel rendelkezik. A füstölési folyamat természetes fafüsttel történik.</p>
+                        <div class="product-details">
+                            <div class="detail-item">
+                                <strong>Zsírtartalom:</strong> 50%
+                            </div>
+                            <div class="detail-item">
+                                <strong>Füstölési idő:</strong> 12-24 óra
+                            </div>
+                            <div class="detail-item">
+                                <strong>Felhasznált fa:</strong> Bükk
+                            </div>
+                        </div>
+                        <div class="product-features">
+                            <span class="feature-tag">Füstölt</span>
+                            <span class="feature-tag">Aromás</span>
+                            <span class="feature-tag">Különleges</span>
+                        </div>
+                        <div class="product-price">3.200 Ft/kg</div>
+                    </div>
+                </div>
+
+                <!-- Kecskesajt -->
+                <div class="product-card-detailed" data-category="kecske">
+                    <div class="product-image">
+                        <i class="fas fa-cheese"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Kecskesajt</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p class="product-description">Friss kecsketejes sajt, amely könnyű, krémszerű textúrával és egyedi ízzel bír. Tökéletes saláták és előételek készítéséhez.</p>
+                        <div class="product-details">
+                            <div class="detail-item">
+                                <strong>Zsírtartalom:</strong> 40%
+                            </div>
+                            <div class="detail-item">
+                                <strong>Érlelési idő:</strong> 1-2 hét
+                            </div>
+                            <div class="detail-item">
+                                <strong>Különlegesség:</strong> Kecsketejes
+                            </div>
+                        </div>
+                        <div class="product-features">
+                            <span class="feature-tag">Kecsketejes</span>
+                            <span class="feature-tag">Krémszerű</span>
+                            <span class="feature-tag">Egészséges</span>
+                        </div>
+                        <div class="product-price">4.500 Ft/kg</div>
+                    </div>
+                </div>
+
+                <!-- Öregített sajt -->
+                <div class="product-card-detailed" data-category="kemeny">
+                    <div class="product-image">
+                        <i class="fas fa-cheese"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Öregített sajt</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="product-description">Hosszú ideig érlelt sajt, amely intenzív ízzel és kemény textúrával rendelkezik. Kiváló borral párosítva vagy reszelt formában tésztákhoz.</p>
+                        <div class="product-details">
+                            <div class="detail-item">
+                                <strong>Zsírtartalom:</strong> 48%
+                            </div>
+                            <div class="detail-item">
+                                <strong>Érlelési idő:</strong> 6-12 hónap
+                            </div>
+                            <div class="detail-item">
+                                <strong>Textúra:</strong> Kemény
+                            </div>
+                        </div>
+                        <div class="product-features">
+                            <span class="feature-tag">Érlelt</span>
+                            <span class="feature-tag">Intenzív</span>
+                            <span class="feature-tag">Prémium</span>
+                        </div>
+                        <div class="product-price">5.800 Ft/kg</div>
+                    </div>
+                </div>
+
+                <!-- Fűszeres sajt -->
+                <div class="product-card-detailed" data-category="kemeny">
+                    <div class="product-image">
+                        <i class="fas fa-cheese"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Fűszeres sajt</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p class="product-description">Különféle fűszerekkel ízesített sajt, amely pikáns és izgalmas ízélményt nyújt. Paprikával, köménnyel és egyéb magyar fűszerekkel készítjük.</p>
+                        <div class="product-details">
+                            <div class="detail-item">
+                                <strong>Zsírtartalom:</strong> 45%
+                            </div>
+                            <div class="detail-item">
+                                <strong>Fűszerek:</strong> Paprika, kömény
+                            </div>
+                            <div class="detail-item">
+                                <strong>Csípősség:</strong> Enyhe-közepes
+                            </div>
+                        </div>
+                        <div class="product-features">
+                            <span class="feature-tag">Fűszeres</span>
+                            <span class="feature-tag">Pikáns</span>
+                            <span class="feature-tag">Magyar</span>
+                        </div>
+                        <div class="product-price">3.500 Ft/kg</div>
+                    </div>
+                </div>
+
+                <!-- Túró -->
+                <div class="product-card-detailed" data-category="turo">
+                    <div class="product-image">
+                        <i class="fas fa-cheese"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Házi túró</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="product-description">Friss, házi túró, amely tökéletes sütemények készítéséhez és egészséges étkezéshez. Magas fehérjetartalmú, természetes termék.</p>
+                        <div class="product-details">
+                            <div class="detail-item">
+                                <strong>Zsírtartalom:</strong> 20%
+                            </div>
+                            <div class="detail-item">
+                                <strong>Fehérjetartalom:</strong> 18%
+                            </div>
+                            <div class="detail-item">
+                                <strong>Felhasználás:</strong> Sütemény, saláta
+                            </div>
+                        </div>
+                        <div class="product-features">
+                            <span class="feature-tag">Friss</span>
+                            <span class="feature-tag">Házi</span>
+                            <span class="feature-tag">Egészséges</span>
+                        </div>
+                        <div class="product-price">1.800 Ft/kg</div>
+                    </div>
+                </div>
+
+                <!-- Camembert típusú sajt -->
+                <div class="product-card-detailed" data-category="lagy">
+                    <div class="product-image">
+                        <i class="fas fa-cheese"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Camembert típusú sajt</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p class="product-description">Lágy, krémes sajt fehér penészréteggel. Francia stílusú, de magyar alapanyagokból készített különlegesség. Kiváló borral vagy gyümölcsökkel.</p>
+                        <div class="product-details">
+                            <div class="detail-item">
+                                <strong>Zsírtartalom:</strong> 60%
+                            </div>
+                            <div class="detail-item">
+                                <strong>Érlelési idő:</strong> 4-6 hét
+                            </div>
+                            <div class="detail-item">
+                                <strong>Stílus:</strong> Francia típusú
+                            </div>
+                        </div>
+                        <div class="product-features">
+                            <span class="feature-tag">Krémes</span>
+                            <span class="feature-tag">Penészes</span>
+                            <span class="feature-tag">Gourmet</span>
+                        </div>
+                        <div class="product-price">6.200 Ft/kg</div>
+                    </div>
+                </div>
+
+                <!-- Mozzarella -->
+                <div class="product-card-detailed" data-category="lagy">
+                    <div class="product-image">
+                        <i class="fas fa-cheese"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Friss mozzarella</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="product-description">Friss, lágy mozzarella sajt, amely tökéletes pizzákhoz, salátákhoz és olasz ételekhez. Naponta frissen készítjük.</p>
+                        <div class="product-details">
+                            <div class="detail-item">
+                                <strong>Zsírtartalom:</strong> 45%
+                            </div>
+                            <div class="detail-item">
+                                <strong>Készítés:</strong> Naponta frissen
+                            </div>
+                            <div class="detail-item">
+                                <strong>Felhasználás:</strong> Pizza, saláta
+                            </div>
+                        </div>
+                        <div class="product-features">
+                            <span class="feature-tag">Friss</span>
+                            <span class="feature-tag">Lágy</span>
+                            <span class="feature-tag">Olasz stílus</span>
+                        </div>
+                        <div class="product-price">4.200 Ft/kg</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Info Section -->
+    <section class="product-info-section">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Szállítás</h3>
+                    <p>Debrecen területén ingyenes kiszállítás 5000 Ft feletti vásárlás esetén.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-snowflake"></i>
+                    <h3>Tárolás</h3>
+                    <p>Minden termékünk megfelelő hűtési körülmények között tárolható 7-14 napig.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Minőség</h3>
+                    <p>Minden sajtunk HACCP szabványok szerint készül, garantált minőséggel.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Rendelés</h3>
+                    <p>Telefonon vagy személyesen is leadhatja rendelését műhelyünkben.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Debreczeni Sajtműhely</h3>
+                    <p>Hagyományos magyar sajtok a szívből</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/debreczenisajt" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Gyors linkek</h4>
+                    <ul>
+                        <li><a href="index.html">Főoldal</a></li>
+                        <li><a href="rolunk.html">Rólunk</a></li>
+                        <li><a href="termekeink.html">Termékeink</a></li>
+                        <li><a href="kapcsolat.html">Kapcsolat</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Elérhetőség</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Debrecen, Magyarország</p>
+                    <p><i class="fas fa-phone"></i> +36 XX XXX XXXX</p>
+                    <p><i class="fas fa-envelope"></i> info@debreczenisajt.hu</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Debreczeni Sajtműhely. Minden jog fenntartva.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

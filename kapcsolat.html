@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcsolat - Debreczeni Sajtműhely</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html" style="text-decoration: none; color: inherit;">Debreczeni Sajtműhely</a></h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Főoldal</a>
+                <a href="rolunk.html" class="nav-link">Rólunk</a>
+                <a href="termekeink.html" class="nav-link">Termékeink</a>
+                <a href="kapcsolat.html" class="nav-link active">Kapcsolat</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Kapcsolat</h1>
+            <p>Vegye fel velünk a kapcsolatot</p>
+        </div>
+    </section>
+
+    <!-- Contact Main Section -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info-detailed">
+                    <h2>Elérhetőségek</h2>
+                    <div class="contact-items">
+                        <div class="contact-item-large">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Címünk</h3>
+                                <p>4025 Debrecen<br>Példa utca 123.<br>Magyarország</p>
+                                <small>Műhelyünk a város központjában található, könnyen megközelíthető tömegközlekedéssel is.</small>
+                            </div>
+                        </div>
+
+                        <div class="contact-item-large">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Telefonszám</h3>
+                                <p><a href="tel:+3652123456">+36 52 123 456</a></p>
+                                <small>Hívjon minket munkaidőben, szívesen válaszolunk kérdéseire és fogadjuk rendelését.</small>
+                            </div>
+                        </div>
+
+                        <div class="contact-item-large">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email cím</h3>
+                                <p><a href="mailto:info@debreczenisajt.hu">info@debreczenisajt.hu</a></p>
+                                <small>Írjon nekünk bármilyen kérdéssel, 24 órán belül válaszolunk.</small>
+                            </div>
+                        </div>
+
+                        <div class="contact-item-large">
+                            <div class="contact-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Facebook</h3>
+                                <p><a href="https://www.facebook.com/debreczenisajt" target="_blank">Debreczeni Sajtműhely</a></p>
+                                <small>Kövessen minket a Facebookon, ahol rendszeresen osztunk meg újdonságokat és recepteket.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Opening Hours -->
+                    <div class="opening-hours">
+                        <h3><i class="fas fa-clock"></i> Nyitvatartás</h3>
+                        <div class="hours-grid">
+                            <div class="day-hours">
+                                <span class="day">Hétfő</span>
+                                <span class="hours">8:00 - 17:00</span>
+                            </div>
+                            <div class="day-hours">
+                                <span class="day">Kedd</span>
+                                <span class="hours">8:00 - 17:00</span>
+                            </div>
+                            <div class="day-hours">
+                                <span class="day">Szerda</span>
+                                <span class="hours">8:00 - 17:00</span>
+                            </div>
+                            <div class="day-hours">
+                                <span class="day">Csütörtök</span>
+                                <span class="hours">8:00 - 17:00</span>
+                            </div>
+                            <div class="day-hours">
+                                <span class="day">Péntek</span>
+                                <span class="hours">8:00 - 17:00</span>
+                            </div>
+                            <div class="day-hours">
+                                <span class="day">Szombat</span>
+                                <span class="hours">8:00 - 14:00</span>
+                            </div>
+                            <div class="day-hours closed">
+                                <span class="day">Vasárnap</span>
+                                <span class="hours">Zárva</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Írjon nekünk</h2>
+                    <p class="form-intro">Töltse ki az alábbi űrlapot, és hamarosan felvesszük Önnel a kapcsolatot. Minden mezőt gondosan töltsön ki, hogy minél pontosabb választ tudjunk adni.</p>
+                    
+                    <form id="contact-form-detailed" class="contact-form-detailed">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Keresztnév *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Vezetéknév *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email cím *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefonszám</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Tárgy *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Válasszon témát</option>
+                                <option value="rendeles">Rendelés</option>
+                                <option value="informacio">Termék információ</option>
+                                <option value="arlista">Árlista kérés</option>
+                                <option value="szallitas">Szállítás</option>
+                                <option value="egyeb">Egyéb</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Üzenet *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Írja le részletesen kérését vagy kérdését..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Szeretnék hírlevelet kapni az újdonságokról és akciókról
+                            </label>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <span class="checkmark"></span>
+                                Elfogadom az <a href="#" target="_blank">adatvédelmi szabályzatot</a> *
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i>
+                            Üzenet küldése
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Találjon meg minket</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Térkép</h3>
+                    <p>4025 Debrecen, Példa utca 123.</p>
+                    <a href="https://maps.google.com/?q=Debrecen" target="_blank" class="btn btn-secondary">
+                        <i class="fas fa-external-link-alt"></i>
+                        Megnyitás Google Maps-ben
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Gyakran Ismételt Kérdések</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Hogyan rendelhetem meg a termékeket?</h3>
+                    <p>Rendelését leadhatja telefonon, emailben vagy személyesen műhelyünkben. Nagyobb mennyiség esetén előrendelést ajánlunk.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Mennyi a szállítási költség?</h3>
+                    <p>Debrecen területén 5000 Ft feletti vásárlás esetén ingyenes a kiszállítás. Ezen alul 500 Ft a szállítási díj.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Meddig tarthatók a sajtok?</h3>
+                    <p>Termékeink megfelelő tárolás mellett 7-14 napig fogyaszthatók. Minden csomagoláson feltüntetjük a fogyaszthatósági időt.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Készítenek egyedi sajtokat?</h3>
+                    <p>Igen, nagyobb rendelések esetén egyedi ízesítésű sajtokat is készítünk. Vegye fel velünk a kapcsolatot az egyeztetéshez.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Van lehetőség üzemlátogatásra?</h3>
+                    <p>Előzetes egyeztetés alapján szívesen fogadjuk az érdeklődőket műhelyünkben. Telefonon vagy emailben egyeztessen időpontot.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Milyen fizetési módokat fogadnak el?</h3>
+                    <p>Készpénz, bankkártya és átutalás is lehetséges. Nagyobb rendelések esetén részletfizetést is biztosítunk.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Debreczeni Sajtműhely</h3>
+                    <p>Hagyományos magyar sajtok a szívből</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/debreczenisajt" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Gyors linkek</h4>
+                    <ul>
+                        <li><a href="index.html">Főoldal</a></li>
+                        <li><a href="rolunk.html">Rólunk</a></li>
+                        <li><a href="termekeink.html">Termékeink</a></li>
+                        <li><a href="kapcsolat.html">Kapcsolat</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Elérhetőség</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Debrecen, Magyarország</p>
+                    <p><i class="fas fa-phone"></i> +36 52 123 456</p>
+                    <p><i class="fas fa-envelope"></i> info@debreczenisajt.hu</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Debreczeni Sajtműhely. Minden jog fenntartva.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
