@@ -22,6 +22,38 @@ if (navLinks.length > 0 && hamburger && navMenu) {
     });
 }
 
+// Smooth scroll and highlight for "Elérhetőségeink" button
+const contactScrollBtn = document.getElementById('contact-scroll-btn');
+if (contactScrollBtn) {
+    contactScrollBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.getElementById('social-media');
+        if (!target) return;
+
+        const offsetTop = target.getBoundingClientRect().top + window.pageYOffset - 80; // account for fixed navbar
+        window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+
+        // Wait until scroll ends approximately, then add highlight
+        let highlightTimeout;
+        const onScrollEnd = () => {
+            clearTimeout(highlightTimeout);
+            highlightTimeout = setTimeout(() => {
+                target.classList.add('highlight-pulse');
+                setTimeout(() => target.classList.remove('highlight-pulse'), 2000);
+                window.removeEventListener('scroll', onScrollEnd);
+            }, 150); // small debounce after scrolling stops
+        };
+
+        window.addEventListener('scroll', onScrollEnd);
+
+        // Fallback if no scroll event fires (already in view)
+        setTimeout(() => {
+            target.classList.add('highlight-pulse');
+            setTimeout(() => target.classList.remove('highlight-pulse'), 2000);
+        }, 600);
+    });
+}
+
 // Smooth scrolling for navigation links (only for anchor links)
 if (navLinks.length > 0) {
     navLinks.forEach(link => {
