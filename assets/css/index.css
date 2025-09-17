@@ -103,6 +103,44 @@ body {
     width: 100%;
 }
 
+/* Purchase Link Highlighting */
+.purchase-link {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #8B4513 !important;
+    font-weight: 700 !important;
+    padding: 8px 16px;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.purchase-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.5s ease;
+}
+
+.purchase-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+    color: #8B4513 !important;
+}
+
+.purchase-link:hover::before {
+    left: 100%;
+}
+
+.purchase-link::after {
+    display: none;
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -122,8 +160,24 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #FFF8DC 0%, #F5E6D3 100%);
+    background: 
+        url('../images/index_hero/cheese_2.png'),
+        url('../images/index_hero/cheese_1.png'),
+        linear-gradient(135deg, #FFF8DC 0%, #F5E6D3 100%);
+    background-size: 360px 360px, 450px 450px, cover;
+    background-position: 
+        left top, 
+        right 130%, 
+        center;
+    background-repeat: no-repeat;
     padding: 100px 20px 50px;
+    position: relative;
+}
+
+.hero-content,
+.hero-image {
+    position: relative;
+    z-index: 2;
 }
 
 .hero-content {
@@ -208,6 +262,13 @@ body {
     color: #FFD700;
     opacity: 0.8;
     animation: float 3s ease-in-out infinite;
+}
+
+.cheese-icon {
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
 }
 
 /* Animations */
